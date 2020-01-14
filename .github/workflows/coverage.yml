@@ -46,8 +46,6 @@ jobs:
         make test
     - name: Upload coverage to Codecov
       working-directory: build
-      env:
-        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       run: |
         wget https://codecov.io/bash -O codecov
         chmod +x codecov
