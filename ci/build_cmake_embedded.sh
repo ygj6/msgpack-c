@@ -40,7 +40,7 @@ then
     exit $ret
 fi
 
-cmake -DEXAMPLE_MSGPACK_EMBEDDED=ON ..
+cmake -DEXAMPLE_MSGPACK_EMBEDDED=ON -DMSGPACK_ENABLE_CXX=OFF ..
 
 ret=$?
 if [ $ret -ne 0 ]

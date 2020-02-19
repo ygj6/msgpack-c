@@ -150,6 +150,7 @@ jobs:
           export CHAR_SIGN="signed"
           export API_VERSION="3"
           export X3_PARSE="ON"
+          export CXX_ONLY="ON"
         fi
         if [ ${{ matrix.pattern }} == 3 ]; then
           export CC=clang
@@ -170,6 +171,7 @@ jobs:
           export SHARED="ON"
           export CHAR_SIGN="signed"
           export API_VERSION="2"
+          export CXX_ONLY="ON"
         fi
         if [ ${{ matrix.pattern }} == 5 ]; then
           export CC=gcc
